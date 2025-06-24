@@ -1,0 +1,43 @@
+{
+  "name": "garmin-workouts-mcp",
+  "version": "1.0.4",
+  "description": "Natural language to Garmin Connect workout creation tool - MCP server for Claude",
+  "main": "dist/mcp-server.js",
+  "bin": {
+    "garmin-workouts-mcp": "dist/mcp-server.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "mcp-server": "tsx src/mcp-server.ts",
+    "prepublishOnly": "pnpm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "garmin",
+    "workout",
+    "mcp",
+    "claude",
+    "fitness",
+    "training"
+  ],
+  "author": "Charles Harris",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.1",
+    "@types/node-fetch": "2",
+    "node-fetch": "2",
+    "puppeteer": "^24.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
