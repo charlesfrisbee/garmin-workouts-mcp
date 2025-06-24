@@ -1,6 +1,6 @@
 # Garmin Workouts MCP
 
-Natural language to Garmin Connect workout creation tool, designed as an MCP (Model Context Protocol) server for Claude.
+Create Garmin Connect workouts using natural language descriptions. Built as an MCP (Model Context Protocol) server.
 
 ## Installation
 
@@ -31,9 +31,26 @@ Then restart Claude Desktop.
 
 ## Usage
 
-1. **Check authentication**: "Check my Garmin authentication status"
-2. **Authenticate**: "Authenticate with Garmin Connect" (one-time setup)
-3. **Create workouts**: "Create a 10 min warmup, 5x1km threshold intervals with 2 min rest, then 10 min cooldown"
+⚠️ **Important**: Auth tokens expire after ~5 minutes. Plan multiple workouts and create them all in one session.
+
+### Quick Start
+Just start creating workouts! The server will prompt for authentication if needed.
+
+**Create a single workout:**
+"Create a 10 min warmup, 5x1km threshold intervals with 2 min rest, then 10 min cooldown"
+
+**Create multiple workouts in one session:**
+```
+"Create these 3 workouts:
+1. Easy 30 min run in zone 2  
+2. 5x1km threshold intervals with 2 min rest
+3. 10x30 second sprints with 90 second recovery"
+```
+
+### How It Works
+1. **Request workouts** - Describe what you want to create
+2. **Auto-authentication** - Browser opens for login when tokens expire
+3. **Batch creation** - Create multiple workouts in the same session
 
 ## Example Workouts
 
@@ -49,7 +66,7 @@ Then restart Claude Desktop.
 - 🔐 **Secure authentication** - Token-based auth with automatic renewal
 - 🏃 **Multi-sport support** - Running, cycling, and swimming workouts
 - ⚡ **Direct Garmin integration** - Creates workouts instantly in Garmin Connect
-- 💾 **Smart caching** - Remembers your login, no repeated authentication
+- 💾 **Smart token handling** - Automatic re-authentication when tokens expire
 
 ## How It Works
 
