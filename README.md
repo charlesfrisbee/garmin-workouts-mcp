@@ -7,7 +7,7 @@ Natural language to Garmin Connect workout creation tool, designed as an MCP (Mo
 ### Claude Code (Recommended)
 
 ```bash
-claude mcp add garmin-workouts-mcp
+claude mcp add garmin-workouts-mcp npx garmin-workouts-mcp
 ```
 
 ### Claude Desktop
