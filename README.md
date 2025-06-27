@@ -36,10 +36,15 @@ Then restart Claude Desktop.
 
 ### Quick Start
 
-Just start creating workouts! The server will prompt for authentication if needed.
+1. **Request a workout** - Just describe what you want: "Create a 10 min warmup, 5x1km threshold intervals with 2 min rest, then 10 min cooldown"
 
-**Create a single workout:**
-"Create a 10 min warmup, 5x1km threshold intervals with 2 min rest, then 10 min cooldown"
+2. **Authenticate when needed** - A browser window will open to Garmin Connect for you to log in (happens when tokens expire ~every 5 minutes)
+
+3. **Your workout appears** - The tool creates it directly in your Garmin Connect account and provides a link to view it
+
+4. **Available on device** - The workout will be available in Garmin Connect and can be sent to your device from there
+
+**Your login is temporarily saved** - Tokens are stored securely on your machine but expire after ~5 minutes, so you may need to re-authenticate between sessions.
 
 **Create multiple workouts in one session:**
 
