@@ -13,6 +13,7 @@
   "scripts": {
     "build": "tsc",
     "mcp-server": "tsx src/mcp-server.ts",
+    "pack": "npm pack && mv garmin-workouts-mcp-*.tgz garmin-workouts-mcp-local.tgz",
     "prepublishOnly": "pnpm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
