@@ -77,6 +77,10 @@ Then restart Claude Desktop.
 - ⚡ **Direct Garmin integration** - Creates workouts instantly in Garmin Connect
 - 💾 **Smart token handling** - Automatic re-authentication when tokens expire
 
+## Current Limitations
+
+⚠️ **Heart rate/zone targets only** - The tool currently supports heart rate zones (Zone 1-5) and specific BPM targets, but does not yet support pace-based targets (e.g., 4:00/km).
+
 ## How It Works
 
 1. Converts your natural language workout description into structured data
